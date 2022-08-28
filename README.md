@@ -36,34 +36,34 @@ En todos los casos la tareas consta de predecir la categoria de un producto en b
 * [Two Sigma: Using News to Predict Stock Movements](https://www.kaggle.com/competitions/two-sigma-financial-news/rules)
 
 
-## Requisites
+## Requisitos
 
-* [anaconda](https://www.anaconda.com/products/individual) / [miniconda](https://docs.conda.io/en/latest/miniconda.html) / [mamba](https://github.com/mamba-org/mamba)
+* [anaconda](https://www.anaconda.com/products/individual) / [miniconda](https://docs.conda.io/en/latest/miniconda.html) / [mamba (Recomendado)](https://github.com/mamba-org/mamba)
 
-## Getting started
+## Comenzando
 
-**Step 1**: Clone repo.
+**Step 1**: Clonar repo.
 
 ```bash
 $ git clone https://github.com/adrianmarino/text-mining.git
 $ cd text-mining
 ```
 
-**Step 2**: Create environment.
+**Step 2**: Crear environment.
 
 ```bash
 $ conda env create -f environment.yml
 ```
 
-## See notebooks in jupyter lab
+## Ver notebooks en jupyter lab
 
-**Step 1**: Enable project environment.
+**Step 1**: Activar environment.
 
 ```bash
 $ conda activate text-mining
 ```
 
-**Step 2**: Under project directory boot jupyter lab.
+**Step 2**: Sobre el directorio del proyecto ejecutar `jupyter lab`.
 
 ```bash
 $ jupyter lab
@@ -72,5 +72,5 @@ Jupyter Notebook 6.1.4 is running at:
 http://localhost:8888/?token=45efe99607fa6......
 ```
 
-**Step 3**: Go to http://localhost:8888.... as indicated in the shell output.
+**Step 3**: Ir a http://localhost:8888.... commo se indica en en la consola.
 
