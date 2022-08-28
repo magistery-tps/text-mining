@@ -72,5 +72,5 @@ Jupyter Notebook 6.1.4 is running at:
 http://localhost:8888/?token=45efe99607fa6......
 ```
 
-**Step 3**: Ir a http://localhost:8888.... commo se indica en en la consola.
+**Step 3**: Ir a http://localhost:8888.... como se indica en la consola.
 
