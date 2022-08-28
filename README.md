@@ -13,7 +13,7 @@
 
 ### Clasificacion de productos
 
-En todos los casos la tareas consta de predecir la clasificación de un producto en base a su título.
+En todos los casos la tareas consta de predecir la categoria de un producto en base a su título.
 
 * [UK- e-bay](https://data.world/opensnippets/ebay-uk-products-dataset)
 * MeLi Data Challenge 2019
