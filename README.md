@@ -3,7 +3,7 @@
 
 ## Notebooks
 
-* Ebay
+* Ebay: Predicción de categoria de productos
    * [Prepprocessing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-prepprocessing.ipynb)
    * [Clusters](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-clusters.ipynb)
    * [Model](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-model.ipynb)
