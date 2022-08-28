@@ -2,15 +2,25 @@ name: text-mining
 channels:
     - defaults
     - pytorch
+    - conda-forge
 dependencies:
     - seaborn
     - matplotlib
-    - numpy
+    - numpy=1.21
     - jupyterlab
     - ipywidgets
+    - umap-learn
+    - datashader   # Required by umap
+    - bokeh        # Required by umap
+    - holoviews    # Required by umap
+    - scikit-image # Required by umap
+    - colorcet     # Required by umap
+    - scikit-learn
     - pip
     - pip:
         - --extra-index-url https://download.pytorch.org/whl/cu116
         - torch==1.12.1+cu116
         - torchvision==0.13.1+cu116
         - pytorch-common==0.0.21
+        - transformers
+        - sentence-transformers

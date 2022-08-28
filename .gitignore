@@ -127,13 +127,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-datasets/
-weights/*auto-encoder*.pt
-weights/*knn*.pt
-
-docs/thesis/*.gz
-docs/thesis/*.toc
-docs/thesis/*.log
-docs/thesis/*.aux
-
-
+weights/
