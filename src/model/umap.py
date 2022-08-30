@@ -1,6 +1,6 @@
 import umap
 import umap.plot
-
+import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -18,7 +18,7 @@ class UMAP:
     ):
         umap.plot.points(
             self.mapper, 
-            labels      = labels.unique(), 
+            labels      = np.unique(labels), 
             theme       = theme, 
             show_legend = show_legend,  
             width       = self.size,
