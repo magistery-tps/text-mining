@@ -16,6 +16,8 @@ dependencies:
     - scikit-image # Required by umap
     - colorcet     # Required by umap
     - scikit-learn
+    - plotly
+    - plotly_express
     - pip
     - pip:
         - --extra-index-url https://download.pytorch.org/whl/cu116

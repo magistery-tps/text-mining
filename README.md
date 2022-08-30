@@ -5,7 +5,7 @@
 
 * Ebay: Predicción de categoria de productos
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-prepprocessing.ipynb)
-   * [Clusters](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-clusters.ipynb)
+   * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-eda.ipynb)
    * [Model](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-model.ipynb)
 
 
