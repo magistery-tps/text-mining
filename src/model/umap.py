@@ -11,16 +11,16 @@ class UMAP:
         self.size   = size
 
     def plot_clusters(
-        self, 
+        self,
         labels,
         theme       = 'fire',
         show_legend = False,
     ):
         umap.plot.points(
-            self.mapper, 
-            labels      = np.unique(labels), 
-            theme       = theme, 
-            show_legend = show_legend,  
+            self.mapper,
+            labels      = labels,
+            theme       = theme,
+            show_legend = show_legend,
             width       = self.size,
             height      = self.size
         )
@@ -28,8 +28,8 @@ class UMAP:
 
     def plot_connectivity(self, edge_bundling = 'hammer'):
         umap.plot.connectivity(
-            self.mapper, 
-            show_points   = True, 
+            self.mapper,
+            show_points   = True,
             width         = self.size,
             height        = self.size,
             edge_bundling = edge_bundling
