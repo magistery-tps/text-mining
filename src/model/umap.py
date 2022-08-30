@@ -2,6 +2,7 @@ import umap
 import umap.plot
 import numpy as np
 import warnings
+import pandas as pd
 warnings.filterwarnings('ignore')
 
 
@@ -34,4 +35,18 @@ class UMAP:
             height        = self.size,
             edge_bundling = edge_bundling
         )
+        return self
+
+    def plot_interactive_clusters(
+        self,
+        labels,
+        point_size = 20
+    ):
+        p = umap.plot.interactive(
+            self.mapper,
+            labels     = labels,
+            hover_data = pd.DataFrame({'Label': labels}),
+            point_size = point_size
+        )
+        umap.plot.show(p)
         return self
