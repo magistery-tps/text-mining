@@ -39,7 +39,7 @@ En todos los casos la tareas consta de predecir la categoria de un producto en b
 ## Requisitos
 
 * [anaconda](https://www.anaconda.com/products/individual) / [miniconda](https://docs.conda.io/en/latest/miniconda.html) / [mamba (Recomendado)](https://github.com/mamba-org/mamba)
-* [Setup de entorno (Window](https://www.youtube.com/watch?v=O8YXuHNdIIk)
+* [Setup de entorno (Window)](https://www.youtube.com/watch?v=O8YXuHNdIIk)
 
 ## Comenzando
 
