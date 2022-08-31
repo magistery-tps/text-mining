@@ -6,8 +6,9 @@
 * Ebay: Predicción de categoria de productos
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-prepprocessing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-eda.ipynb)
-   * [Model](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-model.ipynb)
-
+   * Models
+      * [Bert based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-model.ipynb)
+      * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
 
 ## Datasets
 
