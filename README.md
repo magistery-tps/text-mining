@@ -9,7 +9,7 @@
    * Models
       * [Bert based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay-model.ipynb)
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
-      * Comparar contra el baseline `DummyClasifier`.
+      * Comparar contra el baseline `DummyClassifier`.
 
 ## Datasets
 
