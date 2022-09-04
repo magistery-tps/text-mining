@@ -1,11 +1,26 @@
 import plotly.express as px 
 
 
-def plot_tree(df, title="Arbol de categorias", path=['source', 'target'], figure='sunburst', width=1000, height=1000, font_size=15):
+def plot_tree(df, title="Arbol de categorias", count_column='count', figure='sunburst', size=1800, font_size=16):
+    
+    path = [c for c in df.columns if c != count_column]
+    
     if figure == 'sunburst':
-        fig = px.sunburst(df, path=path,width=width, height=height)
+        fig = px.sunburst(
+            df, 
+            path   = path, 
+            values = count_column, 
+            width  = size,
+            height = size
+        )
     elif figure == 'treemap':
-        fig = px.treemap(df, path=path,width=width, height=height)
+        fig = px.treemap(
+            df, 
+            path   = path, 
+            values = count_column, 
+            width  = size,
+            height = size
+        )
     else:
          raise 'Invalod figure type!'
 
