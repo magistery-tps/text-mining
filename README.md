@@ -4,8 +4,8 @@
 ## Notebooks
 
 * Fashion Outfits
-   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/prepprocessing.ipynb)
-   * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/eda.ipynb)
+   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion_outfits/prepprocessing.ipynb)
+   * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion_outfits/eda.ipynb)
     * Models
       * Bert based classifier
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
