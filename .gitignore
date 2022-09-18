@@ -128,5 +128,8 @@ dmypy.json
 .pyre/
 
 weights/
-datasets/**/*.csv
+datasets/**/all.csv
+datasets/**/train.csv
+datasets/**/val.csv
+datasets/**/test.csv
 
