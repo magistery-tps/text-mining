@@ -4,13 +4,18 @@
 ## Notebooks
 
 * Fashion Outfits
-   * [EDA / Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/eda.ipynb)
+   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/prepprocessing.ipynb)
+   * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/eda.ipynb)
+    * Models
+      * Bert based classifier
+      * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
+      * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
 * Ebay: Predicción de categorias de productos
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/prepprocessing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/eda.ipynb)
    * Models
-      * [Bert based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/model.ipynb)
+      * [Bert based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/bert-model.ipynb)
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
