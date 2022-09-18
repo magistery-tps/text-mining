@@ -4,7 +4,7 @@
 ## Notebooks
 
 * Fashion Outfits
-   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion_outfits/prepprocessing.ipynb)
+   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion_outfits/preprocessing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion_outfits/eda.ipynb)
     * Models
       * Bert based classifier
