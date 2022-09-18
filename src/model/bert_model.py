@@ -35,18 +35,16 @@ class BertModel:
         classifier,
         batch_size,
         criterion,
-        optimizer,
         train_shuffle = True,
         device        = pu.get_device()
     ):
         self.classifier    = classifier.to(device)
         self.batch_size    = batch_size
         self.criterion     = criterion
-        self.optimizer     = optimizer
         self.train_shuffle = train_shuffle
         self.device        = device
 
-    def fit(self, train_dataset, val_dataset=None, epochs=10):
+    def fit(self, train_dataset, optimizer, val_dataset=None, epochs=10):
         dataloader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=self.train_shuffle)
 
         for epoch in range(epochs):
@@ -69,7 +67,7 @@ class BertModel:
                     acc_sum  += (output.argmax(dim=1) == target).sum().item()
 
                     loss.backward()
-                    self.optimizer.step()
+                    optimizer.step()
 
                 tot_train_acc  =  acc_sum  / len(train_dataset)
                 tot_train_loss =  loss_sum / len(train_dataset)
