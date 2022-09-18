@@ -7,7 +7,7 @@
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion_outfits/preprocessing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion_outfits/eda.ipynb)
     * Models
-      * Bert based classifier
+      * [Bert based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion_outfits/bert-model.ipynb)
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
