@@ -21,6 +21,7 @@ dependencies:
     - plotly
     - plotly_express
     - wordcloud
+    - tqdm
     - pip
     - pip:
         - --extra-index-url https://download.pytorch.org/whl/cu116
