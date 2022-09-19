@@ -4,14 +4,17 @@ import util  as ut
 
 
 class FailReportGenerator:
-    def __init__(self, tokenizer, all_set, test_set, test_dataset, targets, predictions, images_path):
+    def __init__(self, tokenizer, test_set, test_dataset, targets, predictions, images_path):
         self.tokenizer    = tokenizer
-        self.all_set      = all_set
+        
         self.test_set     = test_set
         self.test_dataset = test_dataset
+
         self.targets     = np.concatenate(targets)
         self.predictions = np.concatenate(predictions)
-        self.branch_mapping = {row['branch_seq']: (row['branch'], row['image_uri'], row['id']) for _, row in self.test_set[['branch', 'branch_seq', 'image_uri', 'id']].drop_duplicates().iterrows()}
+
+        data = self.test_set[['branch', 'branch_seq', 'image_uri', 'id']].drop_duplicates().iterrows()
+        self.branch_mapping = {row['branch_seq']: (row['branch'], row['image_uri'], row['id']) for _, row in data}
         self.images_path = images_path
 
     def __call__(self):
@@ -35,7 +38,7 @@ class FailReportGenerator:
 
         report = pd.DataFrame(report)
 
-        print(f'Total Fails: {report.shape[0] / self.test_set.shape[0]:.2f}%')
+        print(f'Total Fails: {report.shape[0] / self.test_set.shape[0]*100:.2f}%')
 
         report['pred_image'] = report['pred_image'].apply(lambda x: ut.to_image_html(f'{self.images_path}/{x}'))
         report['true_image'] = report['true_image'].apply(lambda x: ut.to_image_html(f'{self.images_path}/{x}'))

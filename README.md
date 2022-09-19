@@ -7,7 +7,7 @@
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/pre-processing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/eda.ipynb)
     * Models
-      * [Bert based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/bert-model.ipynb)
+      * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/bert-model.ipynb)
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
@@ -15,7 +15,7 @@
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/pre-processing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/eda.ipynb)
    * Models
-      * [Bert based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/bert-model.ipynb)
+      * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/bert-model.ipynb)
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
@@ -51,6 +51,8 @@ En todos los casos la tareas consta de predecir la categoria de un producto en b
 * [anaconda](https://www.anaconda.com/products/individual) / [miniconda](https://docs.conda.io/en/latest/miniconda.html) / [mamba (Recomendado)](https://github.com/mamba-org/mamba)
 * [Setup de entorno (Window)](https://www.youtube.com/watch?v=O8YXuHNdIIk)
 
+
+
 ## Comenzando
 
 
@@ -66,6 +68,17 @@ $ cd text-mining
 ```bash
 $ conda env create -f environment.yml
 ```
+
+**Step 3**: Descargar imagenes del dataset fashion outfits.
+
+```bash
+$ cd datasets/fashion-outfits
+$ wget https://storage.googleapis.com/sigir-challenge/images.tar.gz
+$ tar -xvf images.tar.gz
+```
+
+**Nota**: las imagenes son requeridas para utilizar `FailReportGenerator`.
+
 
 ## Ver notebooks en jupyter lab
 
@@ -86,3 +99,12 @@ http://localhost:8888/?token=45efe99607fa6......
 
 **Step 3**: Ir a http://localhost:8888.... como se indica en la consola.
 
+
+## Reporte de fallos
+
+Este reporte contiene los ejemplos para los cuales el modelo fallo al predecir la categoria del producto. En el mismo se puede ver la descriptión del producto y las categorias predicha y real, junto con sus imagenes.
+La idea de este reporte es comprender en que se equivoca el modelo. Para generar este reporte es necesario correr dos notebooks:
+    
+1. Notebook de pre-procesamiento: Esta notebook crea los conjuntos all, train, val, y test requieridos para generar el reporte.
+2. Notebook bert-model: Por defecto TRAIN==False hay que activarlo para poder entrenar el modelo. En la etapa de evaluación se generadda el reporte.
+    
