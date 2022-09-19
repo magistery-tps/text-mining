@@ -132,4 +132,4 @@ datasets/**/all.csv
 datasets/**/train.csv
 datasets/**/val.csv
 datasets/**/test.csv
-
+datasets/**/images/

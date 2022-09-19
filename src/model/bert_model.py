@@ -8,6 +8,9 @@ from sklearn.metrics import multilabel_confusion_matrix
 from sklearn.metrics import plot_confusion_matrix
 import metric as mt
 import numpy as np
+import logging
+from IPython.display import display
+    
 
 class EvaluationSumamry:
     def __init__(self, predictions, targets, loss, accuracy):
@@ -20,14 +23,16 @@ class EvaluationSumamry:
         mt.plot_confusion_matrix(self.targets[index], self.predictions[index], figuresize=figuresize)
         print(classification_report(self.targets[index], self.predictions[index]))
 
-    def show_metrics(self, figuresize=(25, 25)):
+    def plot_metrics(self, figuresize=(25, 25)):
         targets = np.concatenate(self.targets)
         predictions = np.concatenate(self.predictions)
 
         mt.plot_confusion_matrix(targets, predictions, figuresize=figuresize)
         print(classification_report(targets, predictions))
 
-
+    def show(self):
+        print(f'Accuracy: {self.accuracy*100:.2f}%, Loss: {self.loss:.6f}')
+        
 
 class BertModel:
     def __init__(
