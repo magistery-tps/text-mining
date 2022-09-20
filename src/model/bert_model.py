@@ -19,7 +19,7 @@ class EvaluationSumamry:
         self.loss        = loss
         self.accuracy    = accuracy
 
-    def show_sample_metrics(self, index, figuresize=(12, 12)):
+    def plot_sample_metrics(self, index, figuresize=(12, 12)):
         mt.plot_confusion_matrix(self.targets[index], self.predictions[index], figuresize=figuresize)
         print(classification_report(self.targets[index], self.predictions[index]))
 
