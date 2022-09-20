@@ -14,18 +14,22 @@ from IPython.display import display
 
 class EvaluationSumamry:
     def __init__(self, predictions, targets, loss, accuracy):
-        self.predictions = predictions
-        self.targets     = targets
-        self.loss        = loss
-        self.accuracy    = accuracy
+        self.predictions    = predictions
+        self.targets        = targets
+        self.loss           = loss
+        self.accuracy       = accuracy
 
     def plot_sample_metrics(self, index, figuresize=(12, 12)):
         mt.plot_confusion_matrix(self.targets[index], self.predictions[index], figuresize=figuresize)
         print(classification_report(self.targets[index], self.predictions[index]))
 
-    def plot_metrics(self, figuresize=(25, 25)):
-        targets = np.concatenate(self.targets)
+    def plot_metrics(self, figuresize=(25, 25), label_by_class=None):
+        targets     = np.concatenate(self.targets)
         predictions = np.concatenate(self.predictions)
+
+        if label_by_class:
+            targets      = [label_by_class[c] for c in targets]
+            predictions  = [label_by_class[c] for c in predictions]
 
         mt.plot_confusion_matrix(targets, predictions, figuresize=figuresize)
         print(classification_report(targets, predictions))
