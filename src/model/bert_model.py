@@ -31,7 +31,11 @@ class EvaluationSumamry:
             targets      = [label_by_class[c] for c in targets]
             predictions  = [label_by_class[c] for c in predictions]
 
-        mt.plot_confusion_matrix(targets, predictions, figuresize=figuresize)
+        mt.plot_confusion_matrix(
+            targets, 
+            predictions, 
+            figuresize      = figuresize
+        )
         print(classification_report(targets, predictions))
 
     def show(self):

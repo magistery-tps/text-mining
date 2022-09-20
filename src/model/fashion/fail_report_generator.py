@@ -37,12 +37,12 @@ class FailReportGenerator:
                 })
 
         report = pd.DataFrame(report)
+        
+        report = report.drop('id', axis=1).drop_duplicates().reset_index(drop=True)
 
         print(f'Total Fails: {report.shape[0] / self.test_set.shape[0]*100:.2f}%')
 
         report['pred_image'] = report['pred_image'].apply(lambda x: ut.to_image_html(f'{self.images_path}/{x}'))
         report['true_image'] = report['true_image'].apply(lambda x: ut.to_image_html(f'{self.images_path}/{x}'))
-
-        ut.display_html(report)
-
+        
         return report
