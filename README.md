@@ -3,7 +3,7 @@
 
 ## Notebooks
 
-* Fashion Outfits
+* Dataset Fashion Outfits:
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/pre-processing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/eda.ipynb)
     * Models
@@ -11,7 +11,7 @@
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
-* Ebay: Predicción de categorias de productos
+* Dataset Ebay: Predicción de categorias de productos
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/pre-processing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/eda.ipynb)
    * Models
@@ -19,7 +19,7 @@
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
-## Datasets Propuestos
+## Datasets propuestos
 
 ### Clasificacion de productos
 
