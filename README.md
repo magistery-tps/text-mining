@@ -1,9 +1,10 @@
 # UBA - Maestria en Explotación de Datos y Descubrimiento de Conocimiento - Text Mining
 
+El objetivo en la predicción de la categoria de un producto.
 
 ## Notebooks
 
-* Dataset Fashion Outfits:
+* **Dataset Fashion Outfits**
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/pre-processing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/eda.ipynb)
     * Models
@@ -11,7 +12,7 @@
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
-* Dataset Ebay: Predicción de categorias de productos
+* **Dataset Ebay**
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/pre-processing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/eda.ipynb)
    * Models
