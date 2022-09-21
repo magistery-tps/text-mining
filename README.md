@@ -19,32 +19,6 @@
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
-## Datasets propuestos
-
-### Clasificacion de productos
-
-En todos los casos la tareas consta de predecir la categoria de un producto en base a su título.
-
-* [UK- e-bay](https://data.world/opensnippets/ebay-uk-products-dataset)
-* MeLi Data Challenge 2019
-    * [Kaggle](https://www.kaggle.com/datasets/abugim/meli-data-challenge-2019)
-    * [Train Set](https://meli-data-challenge.s3.amazonaws.com/train.csv.gz)
-    * [Test Set](https://meli-data-challenge.s3.amazonaws.com/test.csv)
-    * [Submit sample](https://meli-data-challenge.s3.amazonaws.com/sample_submission.csv)
-    * [MeLi Data Challenge 2019 – Multiclass Classification in Keras](https://eduardofv.com/2019/10/04/meli-data-challenge-2019-multiclass-classification-in-keras/)
-    * [MeLi Data Challenge 2019 | Deep Learning](https://github.com/mlacosta/MeLi-Data-Challenge-2019)
-* [MeLi Data Challenge 2020](https://www.kaggle.com/datasets/marlesson/meli-data-challenge-2020)
-* Amazon
-    * [Amazon Product Dataset 2020](https://www.kaggle.com/datasets/promptcloud/amazon-product-dataset-2020)
-    * [10,000_Amazon_Products_Dataset](https://www.kaggle.com/datasets/nguyenngocphung/10000-amazon-products-dataset)
-    * [Toy Products on Amazon](https://www.kaggle.com/datasets/PromptCloudHQ/toy-products-on-amazon)
-    * [Amazon Product Reviews Dataset](https://www.kaggle.com/datasets/promptcloud/amazon-product-reviews-dataset)
-* [Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps)
- 
-### Stock prices prediction
-
-* [Two Sigma: Using News to Predict Stock Movements](https://www.kaggle.com/competitions/two-sigma-financial-news/rules)
-
 
 ## Requisitos
 
@@ -108,3 +82,29 @@ La idea de este reporte es comprender en que se equivoca el modelo. Para generar
 1. Notebook de pre-procesamiento: Esta notebook crea los conjuntos all, train, val, y test requieridos para generar el reporte.
 2. Notebook bert-model: Por defecto TRAIN==False hay que activarlo para poder entrenar el modelo. En la etapa de evaluación se generadda el reporte.
     
+
+## Datasets propuestos
+
+### Clasificacion de productos
+
+En todos los casos la tareas consta de predecir la categoria de un producto en base a su título.
+
+* [UK- e-bay](https://data.world/opensnippets/ebay-uk-products-dataset)
+* MeLi Data Challenge 2019
+    * [Kaggle](https://www.kaggle.com/datasets/abugim/meli-data-challenge-2019)
+    * [Train Set](https://meli-data-challenge.s3.amazonaws.com/train.csv.gz)
+    * [Test Set](https://meli-data-challenge.s3.amazonaws.com/test.csv)
+    * [Submit sample](https://meli-data-challenge.s3.amazonaws.com/sample_submission.csv)
+    * [MeLi Data Challenge 2019 – Multiclass Classification in Keras](https://eduardofv.com/2019/10/04/meli-data-challenge-2019-multiclass-classification-in-keras/)
+    * [MeLi Data Challenge 2019 | Deep Learning](https://github.com/mlacosta/MeLi-Data-Challenge-2019)
+* [MeLi Data Challenge 2020](https://www.kaggle.com/datasets/marlesson/meli-data-challenge-2020)
+* Amazon
+    * [Amazon Product Dataset 2020](https://www.kaggle.com/datasets/promptcloud/amazon-product-dataset-2020)
+    * [10,000_Amazon_Products_Dataset](https://www.kaggle.com/datasets/nguyenngocphung/10000-amazon-products-dataset)
+    * [Toy Products on Amazon](https://www.kaggle.com/datasets/PromptCloudHQ/toy-products-on-amazon)
+    * [Amazon Product Reviews Dataset](https://www.kaggle.com/datasets/promptcloud/amazon-product-reviews-dataset)
+* [Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps)
+ 
+### Stock prices prediction
+
+* [Two Sigma: Using News to Predict Stock Movements](https://www.kaggle.com/competitions/two-sigma-financial-news/rules)
