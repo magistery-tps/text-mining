@@ -19,7 +19,7 @@
       * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
       * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
 
-## Datasets
+## Datasets Propuestos
 
 ### Clasificacion de productos
 
