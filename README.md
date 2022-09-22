@@ -15,10 +15,7 @@ El objetivo en la predicción de la categoria de un producto.
 * **Dataset Ebay**
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/pre-processing.ipynb)
    * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/eda.ipynb)
-   * Models
-      * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/bert-model.ipynb)
-      * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
-      * Comparar contra el baseline `DummyClassifier` / Naive Bayes.
+   * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/bert-model.ipynb)
 
 
 ## Requisitos
