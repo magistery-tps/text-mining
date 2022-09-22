@@ -9,16 +9,17 @@ transformers.logging.set_verbosity_error()
 
 class BertClassifier(nn.Module):
     def __init__(
-        self, 
+        self,
         output_dim,
-        model      ='bert-base-cased',
-        dropout    = 0.5,
+        model           ='bert-base-cased',
+        hiden_state_dim = 768,
+        dropout         = 0.5
     ):
         super(BertClassifier, self).__init__()
 
         self.bert    = BertModel.from_pretrained(model)
         self.dropout = nn.Dropout(dropout)
-        self.linear  = nn.Linear(768, output_dim)
+        self.linear  = nn.Linear(hiden_state_dim, output_dim)
         self.relu    = nn.ReLU()
 
     def forward(self, input_id, mask):
