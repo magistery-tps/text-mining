@@ -33,12 +33,12 @@ class Tokenizer:
         self.__max_length     = clamp(0, max_length, 512)
         self.__truncation     = truncation
         self.__return_tensors = return_tensors
-    
+
     def tokenize(self, text):
         return self.__tokenizer(
             text,
             padding        = self.__padding,
-            max_length     = self.__max_length, 
+            max_length     = self.__max_length,
             truncation     = self.__truncation,
             return_tensors = self.__return_tensors
         )
