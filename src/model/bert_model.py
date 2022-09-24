@@ -3,14 +3,10 @@ from torch import nn
 import pytorch_common.util as pu
 from torch.utils.data import DataLoader
 import logging
-from sklearn.metrics import classification_report
-from sklearn.metrics import multilabel_confusion_matrix
-from sklearn.metrics import plot_confusion_matrix
-import metric as mt
 import numpy as np
 import logging
 from IPython.display import display
-    
+from .metrics import plot_metrics
 
 class EvaluationSumamry:
     def __init__(self, predictions, targets, loss, accuracy):
@@ -19,9 +15,8 @@ class EvaluationSumamry:
         self.loss           = loss
         self.accuracy       = accuracy
 
-    def plot_sample_metrics(self, index, figuresize=(12, 12)):
-        mt.plot_confusion_matrix(self.targets[index], self.predictions[index], figuresize=figuresize)
-        print(classification_report(self.targets[index], self.predictions[index]))
+    def plot_sample_metrics(self, index, figuresize=(12, 12)):        
+        plot_metrics(self.targets[index], self.predictions[index], figuresize=figuresize)
 
     def plot_metrics(self, figuresize=(25, 25), label_by_class=None):
         targets     = np.concatenate(self.targets)
@@ -31,12 +26,7 @@ class EvaluationSumamry:
             targets      = [label_by_class[c] for c in targets]
             predictions  = [label_by_class[c] for c in predictions]
 
-        mt.plot_confusion_matrix(
-            targets, 
-            predictions, 
-            figuresize      = figuresize
-        )
-        print(classification_report(targets, predictions))
+        plot_metrics(targets, predictions, figuresize)
 
     def show(self):
         print(f'Accuracy: {self.accuracy*100:.2f}%, Loss: {self.loss:.6f}')

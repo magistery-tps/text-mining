@@ -2,7 +2,6 @@ import numpy  as np
 import pandas as pd
 import util  as ut
 
-
 class FailReportGenerator:
     def __init__(self, tokenizer, test_set, test_dataset, targets, predictions, images_path):
         self.tokenizer    = tokenizer
