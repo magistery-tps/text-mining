@@ -133,3 +133,4 @@ datasets/**/train.csv
 datasets/**/val.csv
 datasets/**/test.csv
 datasets/**/images/
+cache/
