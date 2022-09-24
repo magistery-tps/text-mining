@@ -13,11 +13,12 @@ class BertClassifier(nn.Module):
         output_dim,
         model           ='bert-base-cased',
         hiden_state_dim = 768,
-        dropout         = 0.5
+        dropout         = 0.5,
+        cache_dir       = "../../cache"
     ):
         super(BertClassifier, self).__init__()
 
-        self.bert    = BertModel.from_pretrained(model, use_cache=True, cache_dir="./")
+        self.bert    = BertModel.from_pretrained(model, use_cache=True, cache_dir=cache_dir)
         self.dropout = nn.Dropout(dropout)
         self.linear  = nn.Linear(hiden_state_dim, output_dim)
         self.relu    = nn.ReLU()
