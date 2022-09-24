@@ -6,7 +6,8 @@ import logging
 import numpy as np
 import logging
 from IPython.display import display
-from .metrics import plot_metrics
+from ..metrics import plot_metrics
+
 
 class EvaluationSumamry:
     def __init__(self, predictions, targets, loss, accuracy):

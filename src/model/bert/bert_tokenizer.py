@@ -1,12 +1,11 @@
-from transformers import BertTokenizer
-
+import transformers
 
 
 def clamp(minimum, x, maximum):
     return max(minimum, min(x, maximum))
 
 
-class Tokenizer:
+class BertTokenizer:
     def __init__(
         self, 
         model='bert-base-cased',
@@ -28,7 +27,7 @@ class Tokenizer:
         # then you need to use tf .
         return_tensors = "pt"
     ):
-        self.__tokenizer      = BertTokenizer.from_pretrained(model)
+        self.__tokenizer      = transformers.BertTokenizer.from_pretrained(model)
         self.__padding        = padding
         self.__max_length     = clamp(0, max_length, 512)
         self.__truncation     = truncation
