@@ -6,7 +6,7 @@ import logging
 import numpy as np
 import logging
 from IPython.display import display
-from ..metrics import plot_metrics
+from .metrics import plot_metrics
 
 
 class EvaluationSumamry:
@@ -33,7 +33,7 @@ class EvaluationSumamry:
         print(f'Accuracy: {self.accuracy*100:.2f}%, Loss: {self.loss:.6f}')
         
 
-class BertModel:
+class ModelTrainer:
     def __init__(
         self,
         classifier,

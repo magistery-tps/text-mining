@@ -3,7 +3,7 @@ import torch
 import data as dt
 
 
-class BertDataset(torch.utils.data.Dataset):
+class Dataset(torch.utils.data.Dataset):
     def __init__(self, df, feature_col, target_col, tokenizer):
         self.features = [tokenizer.tokenize(feat) for feat in df[feature_col]]
         self.target = df[target_col].values
