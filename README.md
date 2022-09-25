@@ -5,17 +5,17 @@ El objetivo en la predicción de la categoria de un producto.
 ## Notebooks
 
 * **Dataset Fashion Outfits**
-   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/pre-processing.ipynb)
-   * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/eda.ipynb)
+   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/1-pre-processing.ipynb)
+   * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/2-eda.ipynb)
     * Models
-      * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/bert-model.ipynb)
-      * [Naive Bayes](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/naive-bayes-model.ipynb)
-      * Probar un modelo seq-to-seq donde la secuencia de salida sea la categoria del producto (GRU/LSTM/BERT).
+      * [Baseline: Naive Bayes](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/3-naive-bayes-model.ipynb)
+      * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/4-bert-model.ipynb)
+      * Pendiente: GRU o LSTM
 
 * **Dataset Ebay**
-   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/pre-processing.ipynb)
-   * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/eda.ipynb)
-   * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/bert-model.ipynb)
+   * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/1-pre-processing.ipynb)
+   * [EDA](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/2-eda.ipynb)
+   * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/3-bert-model.ipynb)
 
 
 ## Requisitos
