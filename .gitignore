@@ -128,9 +128,9 @@ dmypy.json
 .pyre/
 
 weights/
-datasets/**/all.csv
-datasets/**/train.csv
-datasets/**/val.csv
-datasets/**/test.csv
+datasets/ebay/all.csv
+datasets/ebay/train.csv
+datasets/ebay/val.csv
+datasets/ebay/test.csv
 datasets/**/images/
 cache/
