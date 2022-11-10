@@ -10,7 +10,7 @@ class Dataset(torch.utils.data.Dataset):
 
     @property
     def shape(self): return self.target.shape
-        
+
     def __len__(self): return len(self.target)
 
     def __getitem__(self, idx): return self.features[idx], self.target[idx]

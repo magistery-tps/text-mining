@@ -1,50 +1,90 @@
+import logging
 
+
+class SourceColumn:
+    def __init__(self, name, type, max_tokens):
+        self.name = name
+        self.type = type
+        self.max_tokens = max_tokens
 
 class FeatureColumnBuilder:
-    def __init__(self, ds, source_column, target_column, tokens_count_col, max_tokens = 150):
-        self.__target_column     = target_column
-        self.__max_tokens        = max_tokens
-        self.__ds                = ds.copy()[ds[tokens_count_col] < self.__max_tokens]
-        self.__ds[self.__target_column] = f'{source_column}: ' + self.__ds[source_column]        
-        self.__tokens_count_col  = tokens_count_col
+    def __init__(self, target_column, tokens_count = True):
+        self.target       = target_column
+        self.sources      = []
+        self.tokens_count = target_column
 
-    def __append_str(self, name, series):
+
+    def add(self, name, type = 'str', max_tokens=None):
+        self.sources.append(SourceColumn(name, type, max_tokens))
+        return self
+
+
+    def __append_str(self, ds, name, series):
+        get_values = lambda v: '' if v is None else f'{name.capitalize()}: {v}. '
+        self.__append_raw(ds, series.apply(get_values))
+
+
+    def __append_str_list(self, ds, name, series, max_tokens):
         def get_values(v):
-            return '' if v is None else f'. {name}: {v}'
-        self.__append_raw(name, series.apply(get_values))
+            try:
+                if v is None:
+                    return ''
+                values = v.replace('[', '').replace(']', '').strip().split(',')
+                if max_tokens > 0:
+                    values = values[:max_tokens]
 
-    def __append_str_list(self, name, series, max_tokens):
+                values = [e.replace("'", '').replace('"', '') for e in values]
+
+                return f'{name.capitalize()}: {", ".join(values)}. '
+            except Exception as error:
+                logging.info(f'column: {name}. Error: {error}')
+                exit(1)
+
+        self.__append_raw(ds, series.apply(get_values))
+
+
+    def __append_list(self, ds, name, series, max_tokens):
         def get_values(v):
-            if v is None:
-                return ''
-            values = v.replace('[', '').replace(']', '').strip().split(',')[:max_tokens]
-            return f'. {name}: ' + ','.join(values)
+            try:
+                if v is None or len(v) == 0:
+                    return ''
+                values = v.tolist()
 
-        self.__append_raw(name, series.apply(get_values))
+                if max_tokens > 0:
+                    values = values[:max_tokens]
 
-    def __append_list(self, name, series, max_tokens):
-        def get_values(v):
-            if v is None or len(v) == 0:
-                return ''
-            values = v.tolist()[:max_tokens]
-            return f'. {name}: ' + ', '.join(values)
-        self.__append_raw(name, series.apply(get_values))
+                values = [e.replace("'", '').replace('"', '') for e in values]
 
-    def __append_raw(self, name, series):
-        self.__ds[self.__target_column]  = self.__ds[self.__target_column] + series 
+                return f'{name.capitalize()}: {", ".join(values)}. '
+            except Exception as error:
+                logging.info(f'column: {name}. Error: {error}')
 
-    def __append(self, col, col_type, max_tokens):
-        if 'str' == col_type:
-            self.__append_str(col, self.__ds[col])
-        elif 'list' == col_type:
-            self.__append_list(col, self.__ds[col], max_tokens)
-        elif 'str_list' == col_type:
-            self.__append_str_list(col, self.__ds[col], max_tokens)
+        self.__append_raw(ds, series.apply(get_values))
 
-    def __update_count(self):
-        self.__ds[self.__tokens_count_col] = self.__ds[self.__target_column].apply(lambda x: len(x.split(' ')))
 
-    def build(self, columns = {}, max_tokens = 10):
-        [self.__append(col, col_type, max_tokens) for col, col_type in columns.items()] 
-        self.__update_count()  
-        return self.__ds
+    def __append_raw(self, ds, series):
+        if self.target in ds.columns:
+            ds[self.target] = ds[self.target] + series
+        else:
+            ds[self.target] = series
+
+
+    def __append(self, ds, name, type, max_tokens):
+        if 'str' == type:
+            self.__append_str(ds, name, ds[name])
+        elif 'list' == type:
+            self.__append_list(ds, name, ds[name], max_tokens)
+        elif 'str_list' == type:
+            self.__append_str_list(ds, name, ds[name], max_tokens)
+
+
+    def __update_count(self, ds):
+        if self.tokens_count:
+            ds['tokens_count'] = ds[self.target].apply(lambda x: len(x.split(' ')))
+
+
+    def __call__(self, ds):
+        ds = ds.copy()
+        [self.__append(ds, source.name, source.type, source.max_tokens) for source in self.sources]
+        self.__update_count(ds)
+        return ds

@@ -30,3 +30,4 @@ dependencies:
         - pytorch-common==0.0.21
         - transformers
         - sentence-transformers
+        - rnutil

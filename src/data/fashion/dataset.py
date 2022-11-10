@@ -1,10 +1,10 @@
 import pandas as pd
 
 
-def load_datasets(path):
-    train_set = pd.read_csv(f'{path}/train.csv').drop_duplicates()
-    val_set   = pd.read_csv(f'{path}/val.csv').drop_duplicates()
-    test_set  = pd.read_csv(f'{path}/test.csv').drop_duplicates()
+def load_datasets(path, prefix=''):
+    train_set = pd.read_csv(f'{path}/{prefix}train.csv').drop_duplicates()
+    val_set   = pd.read_csv(f'{path}/{prefix}val.csv').drop_duplicates()
+    test_set  = pd.read_csv(f'{path}/{prefix}test.csv').drop_duplicates()
 
     train_set['features'] = train_set['features'].apply(str)
     val_set  ['features'] = val_set  ['features'].apply(str)
