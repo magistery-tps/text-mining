@@ -7,6 +7,7 @@ import numpy as np
 import logging
 from IPython.display import display
 from .metrics import plot_metrics
+from sklearn.metrics import classification_report
 
 
 class EvaluationSumamry:
@@ -31,7 +32,19 @@ class EvaluationSumamry:
 
     def show(self):
         print(f'Accuracy: {self.accuracy*100:.2f}%, Loss: {self.loss:.6f}')
-        
+    
+    def predicted_classes_by(self, less_than_f1_score, label_by_class):
+        targets             = [label_by_class[c] for c in np.concatenate(self.targets)]
+        predictions         = [label_by_class[c] for c in np.concatenate(self.predictions)]
+
+        report = classification_report(targets,  predictions, output_dict=True)
+
+        classess = []
+        for k, v in report.items():
+            if type(v) == dict  and 'f1-score' in v and v['f1-score'] < less_than_f1_score:
+                classess.append(k)
+        return classess
+
 
 class ModelTrainer:
     def __init__(
