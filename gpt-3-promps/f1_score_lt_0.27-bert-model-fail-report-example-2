@@ -1,0 +1,171 @@
+Product Category Tree:
+    - accessories
+        - belts
+        - hats
+        - scarves
+        - sunglasses
+    - activewear
+        - performance
+            - tops~sports bras
+        - performance trousers
+            - performance leggings
+        - skiwear
+            - ski jackets
+    - bags
+        - backpacks
+        - belt bags
+        - bucket bags
+        - clutch bags
+        - luggage & holdalls
+        - messenger bags
+        - mini bags
+        - satchels & cross body bags
+        - shoulder bags
+        - tote bags
+    - clothing
+        - all in one
+            - jumpsuits
+            - playsuits
+        - beachwear
+            - bikinis
+        - coats
+            - double breasted & peacoats
+            - double breasted coats
+            - faux fur coats
+            - padded coats
+            - parka coats
+            - parkas
+            - single breasted coats
+            - trench & raincoats
+            - trench coats
+        - denim
+            - bootcut jeans
+            - cropped jeans
+            - denim shorts
+            - flared jeans
+            - regular & straight-leg jeans
+            - skinny jeans
+            - slim-fit jeans
+            - straight-leg jeans
+            - tapered jeans
+            - wide-leg jeans
+        - dresses
+            - cocktail & party dresses
+            - day dresses
+            - evening dresses
+        - jackets
+            - biker jackets
+            - blazers
+            - bomber jackets
+            - denim jackets
+            - faux fur & shearling jackets
+            - fitted jackets
+            - hooded jackets
+            - leather jackets
+            - military jackets
+            - oversized jackets
+            - padded & down jackets
+            - puffer jackets
+            - shirt jackets
+            - sport jackets & windbreakers
+            - tweed jackets
+            - waistcoat & gilets
+            - waistcoats & gilets
+        - knitwear
+            - cardi-coats
+            - cardigans
+            - jumpers
+            - knitted dresses
+            - knitted skirts
+            - knitted tops
+            - knitted trousers
+        - polo shirts
+        - shirts
+        - shorts
+            - bermuda shorts
+            - cargo shorts
+            - chino shorts
+            - deck shorts
+            - denim shorts
+            - knee-length shorts
+            - mini shorts
+            - short shorts
+            - tailored shorts
+            - track & running shorts
+        - skirts
+            - a-line skirts
+            - asymmetric & draped skirts
+            - fitted skirts
+            - full skirts
+            - high-waisted skirts
+            - pencil skirts
+            - pleated skirts
+            - straight skirts
+        - suits
+            - single breasted suits
+        - sweaters & knitwear
+            -cardigans
+            - hoodies
+            - jumpers
+            - sweatshirts
+        - t-shirts & vests
+            - t-shirts
+            - vests & tanks
+        - tops
+            - blouses
+            - hoodies
+            - polo tops
+            - shirts
+            - sweatshirts
+            - t-shirts & jerseys
+            - tunics & kaftans
+            - vests & tank tops
+        - trousers
+            - chinos
+            - cropped trousers
+            - flared trousers
+            - high-waisted trousers
+            - leggings
+            - loose fit
+            - palazzo pants
+            - regular & straight-leg trousers
+            - slim-fit trousers
+            - straight trousers
+            - tailored trousers
+            - tapered trousers
+            - track pants
+            - wide-leg trousers
+    - jewellery
+        - bracelets
+        - earrings
+        - necklaces
+        - rings
+    - lingerie & nightwear~bodies
+    - pre-owned
+        - coats
+        - dresses
+        - jackets
+        - skirts
+        - tops
+        - trousers
+    - shoes
+        - boots
+        - loafers
+        - mules
+        - pumps
+        - sandals
+        - trainers
+            - low-tops
+        - trainers
+
+Product Data:
+    - Description: side - detail trousers.
+    - Gender : men.
+    - Brand : balmain.
+    - Materials : polyamide cotton elastane.
+
+Question: What is the leaf category does the product belong to?
+
+The leaf category for this product would be trousers.
+
+True category: loose fit
