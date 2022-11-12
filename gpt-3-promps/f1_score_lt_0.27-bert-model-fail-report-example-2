@@ -159,13 +159,11 @@ Product Category Tree:
         - trainers
 
 Product Data:
-    - Description: side - detail trousers.
+    - Description: panelled straight - leg trousers.
     - Gender : men.
-    - Brand : balmain.
-    - Materials : polyamide cotton elastane.
+    - Brand : wales bonner.
+    - Materials : cotton wool.
 
 Question: What is the leaf category does the product belong to?
 
-The leaf category for this product would be trousers.
-
-True category: loose fit
+The leaf category for the product is 'tailored trousers'.

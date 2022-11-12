@@ -32,7 +32,7 @@ class EvaluationSumamry:
 
     def show(self):
         print(f'Accuracy: {self.accuracy*100:.2f}%, Loss: {self.loss:.6f}')
-    
+
     def predicted_classes_by(self, less_than_f1_score, label_by_class):
         targets             = [label_by_class[c] for c in np.concatenate(self.targets)]
         predictions         = [label_by_class[c] for c in np.concatenate(self.predictions)]
