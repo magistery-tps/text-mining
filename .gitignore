@@ -128,7 +128,7 @@ dmypy.json
 .pyre/
 
 weights/
-:x
+datasets/fashion-outfits/bert_all_train.csv
 datasets/fashion-outfits/bert_train.csv
 datasets/fashion-outfits/bert_val.csv
 datasets/fashion-outfits/bert_test.csv
