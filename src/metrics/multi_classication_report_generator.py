@@ -15,4 +15,4 @@ class MultiClassicationReportGenerator:
             )
             model_report['model'] = model_name
             reports.append(model_report)
-        return pd.concat(reports)
+        return pd.concat(reports).reset_index(drop=True)

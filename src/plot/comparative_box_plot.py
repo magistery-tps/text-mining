@@ -8,7 +8,7 @@ def comparative_box_plot(
     y,
     figsize     = (8, 6),
     leyend      = False, 
-    points      = True, 
+    points      = False, 
     point_color = 'black',
     point_alpha = 0.1
 ):

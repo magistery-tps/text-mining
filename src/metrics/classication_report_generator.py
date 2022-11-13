@@ -14,7 +14,7 @@ class ClassicationReportGenerator:
 
         selected = [df.columns[-1]]
         selected.extend(df.columns[:-1])
-        return df[selected]
+        return df[selected].reset_index(drop=True)
 
     def generate(self, target, prediction):
         report = classification_report(target, prediction, output_dict = True)
