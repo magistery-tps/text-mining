@@ -1,15 +1,33 @@
 branch
 accessories~belts~n/d
+accessories~hair accessories~n/d
 accessories~hats~n/d
+"accessories~phone, computer & gadgets~n/d"
 accessories~scarves~n/d
 accessories~sunglasses~n/d
+accessories~ties & bow ties~n/d
+accessories~wallets & cardholders~n/d
+accessories~wallets & purses~n/d
+activewear~performance footwear~performance trainers
+activewear~performance jackets~lightweight jackets
+activewear~performance jackets~performance track jackets
+activewear~performance shorts~cycling shorts
+activewear~performance shorts~running shorts
+activewear~performance tops~performance sweatshirts & hoodies
+activewear~performance tops~performance t-shirts
+activewear~performance tops~performance t-shirts & vests
+activewear~performance tops~performance tank tops
 activewear~performance tops~sports bras
 activewear~performance trousers~performance leggings
+activewear~performance trousers~sport track pants
+activewear~skiwear~ski bottoms
 activewear~skiwear~ski jackets
 bags~backpacks~n/d
+bags~beach bags~n/d
 bags~belt bags~n/d
 bags~bucket bags~n/d
 bags~clutch bags~n/d
+bags~laptop bags & briefcases~n/d
 bags~luggage & holdalls~n/d
 bags~messenger bags~n/d
 bags~mini bags~n/d
@@ -18,43 +36,58 @@ bags~shoulder bags~n/d
 bags~tote bags~n/d
 clothing~all in one~jumpsuits
 clothing~all in one~playsuits
+clothing~beachwear~beach cover-ups
+clothing~beachwear~beach dresses
 clothing~beachwear~bikinis
+clothing~beachwear~one-pieces
+clothing~beachwear~swim shorts
+clothing~coats~capes
 clothing~coats~double breasted & peacoats
 clothing~coats~double breasted coats
 clothing~coats~faux fur coats
+clothing~coats~leather coats
 clothing~coats~padded coats
 clothing~coats~parka coats
 clothing~coats~parkas
+clothing~coats~raincoats
 clothing~coats~single breasted coats
 clothing~coats~trench & raincoats
 clothing~coats~trench coats
 clothing~denim~bootcut jeans
+clothing~denim~boyfriend jeans
 clothing~denim~cropped jeans
 clothing~denim~denim shorts
+clothing~denim~denim skirts
 clothing~denim~flared jeans
+clothing~denim~loose-fit jeans
 clothing~denim~regular & straight-leg jeans
 clothing~denim~skinny jeans
 clothing~denim~slim-fit jeans
 clothing~denim~straight-leg jeans
 clothing~denim~tapered jeans
 clothing~denim~wide-leg jeans
+clothing~dresses~beach dresses
 clothing~dresses~cocktail & party dresses
 clothing~dresses~day dresses
 clothing~dresses~evening dresses
+clothing~dresses~n/d
 clothing~jackets~biker jackets
 clothing~jackets~blazers
 clothing~jackets~bomber jackets
+clothing~jackets~capes & ponchos
 clothing~jackets~denim jackets
 clothing~jackets~faux fur & shearling jackets
 clothing~jackets~fitted jackets
 clothing~jackets~hooded jackets
 clothing~jackets~leather jackets
 clothing~jackets~military jackets
+clothing~jackets~n/d
 clothing~jackets~oversized jackets
 clothing~jackets~padded & down jackets
 clothing~jackets~puffer jackets
 clothing~jackets~shirt jackets
 clothing~jackets~sport jackets & windbreakers
+clothing~jackets~suit & dinner jackets
 clothing~jackets~tweed jackets
 clothing~jackets~waistcoat & gilets
 clothing~jackets~waistcoats & gilets
@@ -72,7 +105,9 @@ clothing~shorts~cargo shorts
 clothing~shorts~chino shorts
 clothing~shorts~deck shorts
 clothing~shorts~denim shorts
+clothing~shorts~drop-crotch shorts
 clothing~shorts~knee-length shorts
+clothing~shorts~leather & faux leather shorts
 clothing~shorts~mini shorts
 clothing~shorts~short shorts
 clothing~shorts~tailored shorts
@@ -85,15 +120,20 @@ clothing~skirts~high-waisted skirts
 clothing~skirts~pencil skirts
 clothing~skirts~pleated skirts
 clothing~skirts~straight skirts
+clothing~suits~double  breasted suits
 clothing~suits~single breasted suits
 clothing~sweaters & knitwear~cardigans
 clothing~sweaters & knitwear~hoodies
 clothing~sweaters & knitwear~jumpers
+clothing~sweaters & knitwear~n/d
 clothing~sweaters & knitwear~sweatshirts
+clothing~t-shirts & vests~n/d
 clothing~t-shirts & vests~t-shirts
 clothing~t-shirts & vests~vests & tanks
 clothing~tops~blouses
+clothing~tops~cardigans
 clothing~tops~hoodies
+clothing~tops~n/d
 clothing~tops~polo tops
 clothing~tops~shirts
 clothing~tops~sweatshirts
@@ -102,10 +142,12 @@ clothing~tops~tunics & kaftans
 clothing~tops~vests & tank tops
 clothing~trousers~chinos
 clothing~trousers~cropped trousers
+clothing~trousers~drop-crotch trousers
 clothing~trousers~flared trousers
 clothing~trousers~high-waisted trousers
 clothing~trousers~leggings
 clothing~trousers~loose fit
+clothing~trousers~n/d
 clothing~trousers~palazzo pants
 clothing~trousers~regular & straight-leg trousers
 clothing~trousers~slim-fit trousers
@@ -114,11 +156,20 @@ clothing~trousers~tailored trousers
 clothing~trousers~tapered trousers
 clothing~trousers~track pants
 clothing~trousers~wide-leg trousers
+demi-fine jewellery~demi-fine earrings~n/d
+demi-fine jewellery~demi-fine necklaces~n/d
+fine jewellery~fine earrings~n/d
+fine jewellery~fine necklaces~n/d
+fine jewellery~fine rings~n/d
 jewellery~bracelets~n/d
+jewellery~brooches & pins~n/d
 jewellery~earrings~n/d
 jewellery~necklaces~n/d
 jewellery~rings~n/d
+jewellery~watches~n/d
 lingerie & nightwear~bodies~n/d
+lingerie & nightwear~bras~n/d
+lingerie & nightwear~loungewear~n/d
 pre-owned~coats~n/d
 pre-owned~dresses~n/d
 pre-owned~jackets~n/d
@@ -126,9 +177,15 @@ pre-owned~skirts~n/d
 pre-owned~tops~n/d
 pre-owned~trousers~n/d
 shoes~boots~n/d
+shoes~derby shoes~n/d
+shoes~espadrilles~n/d
+shoes~flip flops & slides~n/d
 shoes~loafers~n/d
 shoes~mules~n/d
 shoes~pumps~n/d
 shoes~sandals~n/d
+shoes~slippers~n/d
+shoes~trainers~hi-tops
 shoes~trainers~low-tops
 shoes~trainers~n/d
+watches~fashion watches~n/d
