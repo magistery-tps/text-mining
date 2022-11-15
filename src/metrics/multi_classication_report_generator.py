@@ -6,12 +6,13 @@ class MultiClassicationReportGenerator:
     def __init__(self):
         self.__generator = ClassicationReportGenerator()
 
-    def generate(self, model_results):
+    def generate(self, model_results, beta=1):
         reports = []
         for model_name, result in model_results.items():
             model_report = self.__generator.generate(
-                target     = result.target.values,
-                prediction = result.prediction.values
+                target     = [v.lower() for v in result.target.values],
+                prediction = [v.lower() for v in result.prediction.values],
+                beta       = beta
             )
             model_report['model'] = model_name
             reports.append(model_report)
