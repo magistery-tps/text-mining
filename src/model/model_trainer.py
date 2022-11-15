@@ -33,7 +33,7 @@ class EvaluationSumamry:
     def show(self):
         print(f'Accuracy: {self.accuracy*100:.2f}%, Loss: {self.loss:.6f}')
 
-    def predicted_classes_by(self, less_than_f1_score, label_by_class):
+    def predicted_classes_by(self, label_by_class, gt_f1_score = 0, lt_f1_score = 1):
         targets             = [label_by_class[c] for c in np.concatenate(self.targets)]
         predictions         = [label_by_class[c] for c in np.concatenate(self.predictions)]
 
@@ -41,7 +41,7 @@ class EvaluationSumamry:
 
         classess = []
         for k, v in report.items():
-            if type(v) == dict  and 'f1-score' in v and v['f1-score'] < less_than_f1_score:
+            if type(v) == dict  and 'f1-score' in v and v['f1-score'] >= gt_f1_score and v['f1-score'] <= lt_f1_score:
                 classess.append(k)
         return classess
 

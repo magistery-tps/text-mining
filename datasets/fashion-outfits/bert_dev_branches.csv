@@ -46,6 +46,7 @@ clothing~coats~double breasted & peacoats
 clothing~coats~double breasted coats
 clothing~coats~faux fur coats
 clothing~coats~leather coats
+clothing~coats~oversized coats
 clothing~coats~padded coats
 clothing~coats~parka coats
 clothing~coats~parkas
@@ -75,11 +76,13 @@ clothing~jackets~biker jackets
 clothing~jackets~blazers
 clothing~jackets~bomber jackets
 clothing~jackets~capes & ponchos
+clothing~jackets~cropped jackets
 clothing~jackets~denim jackets
 clothing~jackets~faux fur & shearling jackets
 clothing~jackets~fitted jackets
 clothing~jackets~hooded jackets
 clothing~jackets~leather jackets
+clothing~jackets~lightweight jackets
 clothing~jackets~military jackets
 clothing~jackets~n/d
 clothing~jackets~oversized jackets
@@ -150,6 +153,7 @@ clothing~trousers~loose fit
 clothing~trousers~n/d
 clothing~trousers~palazzo pants
 clothing~trousers~regular & straight-leg trousers
+clothing~trousers~skinny trousers
 clothing~trousers~slim-fit trousers
 clothing~trousers~straight trousers
 clothing~trousers~tailored trousers
