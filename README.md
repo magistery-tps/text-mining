@@ -14,6 +14,7 @@ El objetivo es predecir la rama del arbol de categorias, en al cual se encuentra
       * [SVD - Bayes - FFNN](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/6_ds_Farfetch_SVD_Bayes_RN.ipynb)
       * [Model Ensemple](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/7-ensamble.ipynb)
     * [Model Comparison Metrics](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/9-comparative-metrics.ipynb)
+    * [Slides](https://github.com/magistery-tps/text-mining/blob/master/slides/PresentacionTM_02.pdf)
 
 * **Dataset Ebay**
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/1-pre-processing.ipynb)
