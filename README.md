@@ -13,7 +13,7 @@ El objetivo en la predicción de la categoria de un producto.
       * [W2V - FFNN](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/5_Farfetch_con_Keras_word2vect_prom.ipynb)
       * [SVD - Bayes - FFNN](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/6_ds_Farfetch_SVD_Bayes_RN.ipynb)
       * [Model Ensemple](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/7-ensamble.ipynb)
-      * [Models Comparative Metrics](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/9-comparative-metrics.ipynb)
+      * [Model Comparison Metrics](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/9-comparative-metrics.ipynb)
 
 * **Dataset Ebay**
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/1-pre-processing.ipynb)
