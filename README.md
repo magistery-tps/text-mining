@@ -1,6 +1,6 @@
 # UBA - Maestria en Explotación de Datos y Descubrimiento de Conocimiento - Text Mining
 
-El objetivo en la predicción de la categoria de un producto.
+El objetivo es predecir la rama del arbol de categorias, en al cual se encuentra un producto.
 
 ## Notebooks
 
