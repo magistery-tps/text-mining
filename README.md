@@ -11,6 +11,8 @@ El objetivo en la predicción de la categoria de un producto.
       * [Baseline: Naive Bayes](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/3-naive-bayes-model.ipynb)
       * [BERT based classifier](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/4.1-bert-model.ipynb)
       * Pendiente: GRU o LSTM
+      * [Model Ensemple](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/7-ensamble.ipynb)
+      * [Models Comparative Metrics](https://github.com/magistery-tps/text-mining/blob/master/notebooks/fashion-outfits/9-comparative-metrics.ipynb)
 
 * **Dataset Ebay**
    * [Pre-Processing](https://github.com/magistery-tps/text-mining/blob/master/notebooks/ebay/1-pre-processing.ipynb)
